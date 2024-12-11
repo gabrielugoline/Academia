@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Callado Trainer</title>
+    <link rel="shortcut icon" href="imagem/fav.png" type="image/x-icon">
+    <link rel="stylesheet" type='text/css' media='screen' href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"> <img src="imagem/logosemfundo.png" alt="Logo" style="width: 100px; height: auto; margin-right: 15px;"></a>
+        <a href="index.html" class="logo"></a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#features">Nossos Serviços</a>
+            <a href="#pricing">Preços</a>
+            <a href="#trainers">Conexões</a>
+            <a href="#blogs">Nosso espaço</a>
+        </nav>
+        <script>
+            let lastScrollTop = 0; // Guarda a última posição da rolagem
+            const header = document.querySelector(".header"); // Seleciona o header
+    
+            window.addEventListener("scroll", function() {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (currentScroll > lastScrollTop) {
+                    // Rolando para baixo
+                    header.style.top = "-1000px"; // Esconde o cabeçalho
+                } else {
+                    // Rolando para cima
+                    header.style.top = "0"; // Exibe o cabeçalho
+                }
+    
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita números negativos
+            });
+        </script>
+    </header>
+    <!--FIM DE CABEÇALHO-->
+    <section id="home" class="home">
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(imagem/home01.png) no-repeat;">
+                    <div class="content">
+                        <span>Seja Callado, Conquiste Sua Melhor Versão.</span>
+                        <h3>Transforme-se na sua melhor versão, superando limites e vencendo suas desculpas!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(imagem/home02.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Seja Callado, Conquiste Sua Melhor Versão.</span>
+                        <h3>Desafie seus próprios limites, e faça do esforço sua rotina.</h3>
+                    </div>
+                </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Fim home-->
+
+    <section id="about" class="about">
+        <div class="image">
+            <img src="imagem/sobre.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <span>Sobre Nós</span>
+            <h3 class="title">Cada dia é uma chance de se tornar melhor</h3>
+            <p>Na CalladoTrainer, acreditamos que cada novo dia é uma oportunidade para evoluir e alcançar seu potencial máximo. Nossa missão é proporcionar a você um ambiente dedicado à sua transformação física e mental.</p>
+
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Corpo e Mente</h3>
+                    <p>Fortaleça seu corpo, e sua mente. Oferecemos treinos para um corpo saudável e uma mente resiliente.</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Vida Saudável</h3>
+                    <p>Acreditamos em conquistar uma vida equilibrada, com saúde, bem-estar e disciplina.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Estratégias</h3>
+                    <p>Oferecemos planos de treinamento personalizados, desenvolvidos para atingir seus objetivos com eficiência.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Treino</h3>
+                    <p>Com a metodologia CalladoTrainer, você se desafia constantemente, levando seu corpo a novos patamares de força e resistência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fim sobre-->
+
+    <section id="features" class="features">
+        <!--Fim serviços-->
+        <h1 class="heading"> <span>O que Oferecemos</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="imagem/academia1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="https://i.postimg.cc/J46txFdD/icon-1.png" alt="">
+                    <h3>Musculação</h3>
+                    <p>Aprimore sua força e definição com um treino de musculação personalizado, ajustado às suas necessidades.</p>
+                    <a href="https://wa.me//5531975553517" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="imagem/muaythai1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="imagem/muaythai.png" alt="">
+                    <h3>Muay Thai</h3>
+                    <p>Treinamento focado em resistência, explosão e disciplina mental, para alcançar um novo nível de condicionamento físico.</p>
+                    <a href="https://wa.me//5531975553517" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="imagem/jiujitsu1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="imagem/jiujitsu.png" alt="">
+                    <h3>Jiu-Jitsu</h3>
+                    <p>Aprimore sua habilidade, força e flexibilidade com uma arte marcial que ensina não apenas o corpo, mas também a mente.</p>
+                    <a href="https://wa.me//5531975553517" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="imagem/avaliacao.png" alt="">
+                </div>
+                <div class="content">
+                    <img src="imagem/ginastica.png" alt="">
+                    <h3>Avaliação Física</h3>
+                    <p>Avaliação detalhada do seu progresso, com acompanhamento profissional para garantir o melhor desenvolvimento.</p>
+                    <a href="https://wa.me//5531975553517" class="btn">Saiba mais</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="information">
+            <span>Plano de Preços</span>
+            <h3>Plano de preços acessível para você</h3>
+            <p>Oferecemos planos acessíveis, com uma estrutura que cabe no seu bolso e acompanha o seu progresso. Fale conosco para mais detalhes.</p>
+            <p> <i class="fas fa-check"></i> Exercícios Individualizados </p>
+            <p> <i class="fas fa-check"></i> Treinamento Personalizado</p>
+            <p> <i class="fas fa-check"></i> Acompanhamento Profissional </p>
+            <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+           
+        </div>
+
+        <div class="plan basic">
+            <h3>Musculação</h3>
+            <div class="price"><span>R$</span>90,00<span>/mês</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> Segunda a sexta - 06h às 22h <br>Sábados e alguns feriados - 08h às 12h  </p>
+                <p> <i class="fas fa-check"></i> Primeiro mês: R$130,00 <br>(inclusa avaliação física)</p>
+                <p> <i class="fas fa-check"></i> Exercícios Funcionais </p>
+                <p> <i class="fas fa-check"></i> Treinos de Força e Resistência </p>
+                <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+            </div>
+            <a href="https://wa.me//5531975553517" class="btn">Adquira já</a>
+        </div>
+
+
+        <div class="plan basic">
+            <h3>Jiu-jitsu Kids</h3>
+            <div class="price"><span>R$</span>80,00<span>/mês</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> Treinador Caio</p>
+                <p> <i class="fas fa-check"></i> Terça e quinta - 18h30min </p>
+                <p> <i class="fas fa-check"></i> Autoconfiança e Disciplina </p>
+                <p> <i class="fas fa-check"></i> Aumento de Condicionamento Físico</p>
+                <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+            </div>
+            <a href="https://wa.me//5531975553517" class="btn">Adquira já</a>
+        </div>
+
+        <div class="plan basic">
+            <h3>Muay Thai</h3>
+            <div class="price"><span>R$</span>110,00<span>/mês</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> Treinador Félix e Caio</p>
+                <p> <i class="fas fa-check"></i> Segunda, quarta e sexta - 19h</p>
+                <p> <i class="fas fa-check"></i> Autodefesa e Habilidades de Combate </p>
+                <p> <i class="fas fa-check"></i> Controle Emocional e Gerenciamento de Stress </p>
+                <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+            </div>
+            <a href="https://wa.me//5531975553517" class="btn">Adquira já</a>
+        </div>
+        <div class="plan basic">
+            <h3>Avaliação Física</h3>
+            <div class="price"><span>R$</span>50,00<span>/mês</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> Anamnese</p>
+                <p> <i class="fas fa-check"></i> Observações posturais</p>
+                <p> <i class="fas fa-check"></i> Teste de força</p>
+                <p> <i class="fas fa-check"></i> Teste de resistência cardiovascular</p>
+                <p> <i class="fas fa-check"></i> Medidas de tecido adiposo</p>
+            </div>
+            <a href="https://wa.me//5531975553517" class="btn">Adquira já</a>
+        </div>
+
+        <div class="plan basic">
+            <h3>Liberação Miofascial</h3>
+            <div class="price"><span>R$</span>90,00<span>/mês</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> Alívio de Tensão Muscular </p>
+                <p> <i class="fas fa-check"></i> Melhora na Flexibilidade </p>
+                <p> <i class="fas fa-check"></i> Redução de Dores Crônicas </p>
+                <p> <i class="fas fa-check"></i> Aceleração da Recuperação Muscular </p>
+                <p> <i class="fas fa-check"></i> Melhora na Circulação Sanguínea </p>
+            </div>
+            <a href="https://wa.me//5531975553517" class="btn">Adquira já</a>
+        </div>
+        <a href="Planos/plano.html" class="btn">Veja mais planos aqui</a>
+        
+    </section>
+    <!--Fim precos-->
+
+    <section id="trainers" class="trainers">
+        <h1 class="heading"> <span>Conexões no fitness</span> </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="imagem/1.png" alt="">
+                <div class="content">
+                    <span>Callado &</span>
+                    <h3>Paulo Muzy</h3>
+                    <div class="share">
+                        <h4 style="color: #fa865d ; font-size: 28px;">Seja um campeão!</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagem/2.png" alt="">
+                <div class="content">
+                    <span>Callado &</span>
+                    <h3>Fabio Giga e Júlia Chitarra</h3>
+                    <div class="share">
+                        <h4 style="color: #fa865d ; font-size: 28px;">Seja um campeão!</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagem/3.png" alt="">
+                <div class="content">
+                    <span>Callado &</span>
+                    <h3>Renato Cariani</h3>
+                    <div class="share">
+                        <h4 style="color: #fa865d ; font-size: 28px;">Seja um campeão!</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagem/4.png" alt="">
+                <div class="content">
+                    <span>Callado &</span>
+                    <h3>Johann Schatz</h3>
+                    <div class="share">
+                        <h4 style="color: #fa865d ; font-size: 28px;">Seja um campeão!</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fim treinadores-->
+
+
+    <section class="review">
+        <div class="information">
+            <span>Feedbacks</span>
+            <h3>O que nossos clientes dizem</h3>
+        </div>
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <p>Amo esse lugar! Ótimo para treinar equipamentos em ótimo estado.</p>
+                    <div class="user">
+                        <div class="info">
+                            <span>Débora Barroso</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Experiência muito bacana, instrutores bem educados e equipamentos muito bem cuidados</p>
+                    <div class="user">
+                        <div class="info">
+                            <span>Kolyn Silvestre</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lugar maravilhoso, onde consigo esquecer de tudo e focar somente em mim... Amuuu, lá só tem os melhores parabéns a toda esquipe.</p>
+                    <div class="user">
+                        <div class="info">
+                            <span>Telma Silva</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Excelente academia ,muito agradável o ambiente. Super recomendo.</p>
+                    <div class="user">
+                        <div class="info">
+                            <span>Alessandra Candeia</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <p>Excelente profissional, academia bem aparelhada. Ambiente tranquilo e agradável para treinar.</p>
+            <div class="user">
+                <div class="info">
+                    <span>Fabiano Menezes</span>
+                </div>
+                <i class="fas fa-quote-left"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </section>
+    <!--Fim feedback-->
+
+    <section id="blogs" class="blogs">
+        <h1 class="heading"> <span>Nosso espaço</span> </h1>
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imagem/esp4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imagem/esp5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imagem/esp3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imagem/esp2.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="imagem/esp1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Fim blogs-->
+</main>
+<!--Fim conteudo principal-->
+
+    <footer class="footer">
+        <img src="imagem/callado.png" alt="Logo" style="width: 150px; height: auto; margin-right: 15px;">
+        <div class="box-container">
+            <div class="box">
+                <h3>Horário de Funcionamento</h3>
+                <p> Segunda - Sex : <i> 6:00 - 22:00 </i></p>
+                <p> Sábado : <i> 8:00 - 12:00 </i></p>
+            </div>
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> +31 97555-3517</p>
+                <p> <i class="fas fa-map"></i>Rua da Olaria 727, Diamante/BH</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/people/Eduardo-Calado/pfbid02ySiinNQouw31tgMFmuw915zCChsE46KLXLvVESsUByZmgSHRg8CACQYw1w3ict1kl/?mibextid=LQQJ4d&rdid=FvQFuDl7FbsRWcWY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Ed4NwtAHV%2F%3Fmibextid%3DLQQJ4d" class="fab fa-facebook-f"></a>                
+                    <a href="https://www.instagram.com/academiacalladotrainer/" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
